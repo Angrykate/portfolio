@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+*.psd
+*.zip
+node_modules/
+_brouillons/

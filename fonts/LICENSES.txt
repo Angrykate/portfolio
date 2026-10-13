@@ -1,0 +1,4 @@
+Polices auto-hébergées, sous licence SIL Open Font License 1.1 :
+- Instrument Serif (The Instrument Serif Project Authors)
+- Plus Jakarta Sans (The Plus Jakarta Sans Project Authors)
+- JetBrains Mono (The JetBrains Mono Project Authors)

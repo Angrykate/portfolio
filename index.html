@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Illane SIDIBE | Portfolio</title>
+  <meta name="description" content="Portfolio d'Illane SIDIBE, étudiant en IA & Big Data à Lomé : bases de données, modèles de prévision et applications.">
+  <meta name="theme-color" content="#0a121c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Illane SIDIBE | Portfolio">
+  <meta property="og:description" content="Cinq projets en bases de données, IA et développement d'applications.">
+  <meta property="og:image" content="images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    /* Thème appliqué avant l'affichage pour éviter un clignotement */
+    try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Illane SIDIBE","jobTitle":"Étudiant en IA & Big Data","url":"https://angrykate.github.io/","sameAs":["https://github.com/Angrykate","https://linkedin.com/in/Illanesidibe"]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#projets">Aller aux projets</a>
+  <div id="progress" aria-hidden="true"></div>
+
+  <!-- ============ MENU ============ -->
+  <header class="site-header">
+    <a class="logo" href="#accueil">Illane<span>.</span>S</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav id="menu" aria-label="Navigation principale">
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#methode">Méthode</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" aria-label="Changer de thème" title="Thème clair / sombre">◐</button>
+      <a class="btn btn-small" href="assets/CV_Illane_SIDIBE.pdf" download>CV</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ ACCUEIL ============ -->
+    <section id="accueil" class="section hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow hero-in" style="--d:0">Étudiant en IA &amp; Big Data · Lomé, Togo</p>
+          <h1 class="hero-in" style="--d:1">Illane <em class="grad-text">Sidibe</em></h1>
+          <p class="lead hero-in" style="--d:2">Je conçois des applications qui s'appuient sur les données :
+            <span class="typed-wrap"><span class="typed" id="typed">bases de données</span><span class="caret" aria-hidden="true"></span></span>
+          </p>
+          <div class="hero-actions hero-in" style="--d:3">
+            <a class="btn" href="#projets" data-magnetic>Voir les projets</a>
+            <a class="btn btn-outline" href="assets/CV_Illane_SIDIBE.pdf" download data-magnetic>Télécharger mon CV</a>
+          </div>
+          <ul class="hero-links hero-in" style="--d:4">
+            <li><a href="https://github.com/Angrykate" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/Illanesidibe" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:Illanesidibe908@gmail.com">Écrire</a></li>
+          </ul>
+        </div>
+        <figure class="hero-photo hero-in" style="--d:2">
+          <img src="images/profil/illane-portrait.webp" alt="Portrait d'Illane SIDIBE" width="400" height="500" fetchpriority="high">
+        </figure>
+      </div>
+      <div class="container stats stagger">
+        <div class="stat"><span class="stat-number" data-target="5">0</span><span class="stat-label">projets</span></div>
+        <div class="stat"><span class="stat-number" data-target="4">0</span><span class="stat-label">modèles d'IA (PetroStock)</span></div>
+        <div class="stat"><span class="stat-number" data-target="3">0</span><span class="stat-label">langages : Python, Java, SQL</span></div>
+        <div class="stat"><span class="stat-number" data-target="3">0</span><span class="stat-label">bases de données utilisées</span></div>
+      </div>
+      <a class="scroll-hint" href="#apropos" aria-label="Défiler vers le bas"><span></span></a>
+    </section>
+
+    <!-- ============ RUBAN ============ -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon-track"><span>Données ✦ Modèles ✦ Applications ✦ Prévision ✦ Bases de données ✦ </span><span>Données ✦ Modèles ✦ Applications ✦ Prévision ✦ Bases de données ✦ </span></div>
+    </div>
+
+    <!-- ============ À PROPOS ============ -->
+    <section id="apropos" class="section">
+      <div class="container">
+        <div class="about-grid reveal">
+          <div>
+            <p class="eyebrow">01 — À propos</p>
+            <h2>Des données aux <em class="grad-text">applications utiles</em></h2>
+          </div>
+          <div>
+            <p>Étudiant en licence fondamentale IA &amp; Big Data à l'École Polytechnique de Lomé, je m'intéresse à tout ce qui relie les données aux applications utiles : modélisation de bases de données, apprentissage automatique et développement d'interfaces.</p>
+            <p>Les projets ci-dessous sont des travaux académiques menés seul, en binôme ou en équipe. Pour chacun, j'indique mon rôle exact.</p>
+          </div>
+        </div>
+
+        <div class="about-extra">
+          <div class="code-card reveal" id="code-card">
+            <div class="code-head" aria-hidden="true"><i></i><i></i><i></i><span>profil.py</span></div>
+            <pre><code id="code-text">illane = {
+    "formation": "Licence IA &amp; Big Data",
+    "école": "École Polytechnique de Lomé",
+    "langages": ["Python", "Java", "SQL"],
+    "bases_de_données": ["PostgreSQL", "SQL Server", "SQLite"],
+    "projets": 5,
+    "modèles_d_ia": 4,
+}
+
+def mon_approche(projet):
+    return [
+        "comprendre les données",
+        "comparer à une référence",
+        "tester sur des données inédites",
+        "dire ce qui ne marche pas",
+    ]</code></pre>
+          </div>
+
+          <ol class="path reveal" id="path">
+            <li style="--i:0"><span class="date">2023</span><strong>Baccalauréat scientifique</strong><small>Collège Notre Dame de l'Église</small></li>
+            <li style="--i:1"><span class="date">2023 – aujourd'hui</span><strong>Licence fondamentale, IA &amp; Big Data</strong><small>École Polytechnique de Lomé</small></li>
+            <li class="now" style="--i:2"><span class="date">Aujourd'hui</span><strong>Cinq projets réalisés</strong><small>Bases de données, IA, applications</small></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETS ============ -->
+    <section id="projets" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">02 — Projets</p>
+          <h2>Cinq projets, du modèle de données à <em class="grad-text">l'application</em></h2>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Filtrer les projets">
+          <button class="chip actif" data-filter="all">Tous</button>
+          <button class="chip" data-filter="ia">IA &amp; données</button>
+          <button class="chip" data-filter="bdd">Bases de données</button>
+          <button class="chip" data-filter="app">Applications</button>
+        </div>
+        <div class="strip-wrap">
+          <div id="projects-grid" class="projects-grid" tabindex="0" aria-label="Liste de projets, faire défiler horizontalement"></div>
+          <div class="strip-controls">
+            <button class="strip-btn strip-prev" aria-label="Projets précédents">←</button>
+            <div class="strip-progress" aria-hidden="true"><span></span></div>
+            <button class="strip-btn strip-next" aria-label="Projets suivants">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMPÉTENCES ============ -->
+    <div class="forecast" aria-hidden="true">
+      <svg viewBox="0 0 1000 150" preserveAspectRatio="none" id="fc">
+        <defs><linearGradient id="fc-grad" x1="0" x2="1"><stop offset="0" stop-color="#f3c26b"/><stop offset=".5" stop-color="#f08a5d"/><stop offset="1" stop-color="#c77dff"/></linearGradient></defs>
+        <path class="fc-hist" d="M0 95 C40 80 70 110 110 90 S180 55 230 80 S300 105 350 70 S430 40 480 65 S540 85 600 60"/>
+        <line class="fc-split" x1="600" y1="10" x2="600" y2="140"/>
+        <path class="fc-band" d="M600 60 C680 40 760 70 840 35 S950 20 1000 25 L1000 75 C950 85 900 80 840 70 S680 90 600 60Z"/>
+        <path class="fc-pred" id="fc-pred" d="M600 60 C680 65 760 55 840 52 S950 45 1000 50"/>
+        <circle class="fc-dot" id="fc-dot" r="6" cx="0" cy="95"/>
+        <text class="fc-lab" x="8" y="140">historique</text><text class="fc-lab" x="612" y="140">prévision</text>
+      </svg>
+    </div>
+    <section id="competences" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">03 — Compétences</p>
+          <h2>De la donnée <em class="grad-text">à l'écran</em></h2>
+        </div>
+
+        <div class="pipeline reveal" id="pipeline">
+          <div class="pipe-line" aria-hidden="true"><span class="pipe-packet"></span></div>
+          <ol class="pipe-nodes">
+            <li class="pipe-node" style="--i:0">
+              <div class="pipe-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></div>
+              <h3>Données</h3><p>Modéliser, nettoyer, interroger.</p>
+              <ul class="tags"><li>SQL</li><li>PostgreSQL</li><li>pandas</li></ul>
+            </li>
+            <li class="pipe-node" style="--i:1">
+              <div class="pipe-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2"/><circle cx="6" cy="17" r="2"/><circle cx="18" cy="12" r="2"/><path d="M8 7l8 5M8 17l8-5"/></svg></div>
+              <h3>Modèles</h3><p>Prévoir, comparer, évaluer.</p>
+              <ul class="tags"><li>Prophet</li><li>XGBoost</li><li>scikit-learn</li></ul>
+            </li>
+            <li class="pipe-node" style="--i:2">
+              <div class="pipe-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+              <h3>API</h3><p>Exposer les résultats.</p>
+              <ul class="tags"><li>FastAPI</li><li>Django REST</li></ul>
+            </li>
+            <li class="pipe-node" style="--i:3">
+              <div class="pipe-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div>
+              <h3>Interface</h3><p>Rendre utilisable.</p>
+              <ul class="tags"><li>React</li><li>JavaScript</li><li>Tkinter</li></ul>
+            </li>
+          </ol>
+        </div>
+
+        <div id="stack" class="stack reveal" aria-label="Technologies et outils que j'utilise">
+          <div class="marquee" data-row="dev"><div class="marquee-track"></div></div>
+          <div class="marquee marquee-rev" data-row="data"><div class="marquee-track"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÉTHODE ============ -->
+    <section id="methode" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">04 — Méthode</p>
+          <h2>Trois <em class="grad-text">réflexes</em></h2>
+          <p class="section-lead">Ce que je refais à chaque projet de prévision, quel que soit le sujet : trois habitudes pour que les résultats soient fiables.</p>
+        </div>
+
+        <div class="reflex-grid stagger">
+          <article class="reflex" data-tilt>
+            <div class="reflex-visual" aria-hidden="true">
+              <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+                <path class="line-ref" pathLength="1" d="M0 82 C60 78 120 80 180 74 S260 76 300 72"/>
+                <path class="line-real" pathLength="1" d="M0 70 C40 30 70 100 110 60 S190 30 230 65 S280 90 300 50"/>
+                <path class="line-model" pathLength="1" d="M0 72 C40 36 70 96 110 62 S190 36 230 66 S280 88 300 54"/>
+              </svg>
+              <div class="legend"><span class="l-ref">Référence simple</span><span class="l-model">Modèle avancé</span></div>
+            </div>
+            <span class="reflex-n">01</span>
+            <h3>Toujours une référence</h3>
+            <p>Un modèle n'a de valeur que comparé à un autre. Je mets toujours un modèle simple en face : si le modèle sophistiqué ne le bat pas, il ne sert à rien.</p>
+          </article>
+
+          <article class="reflex" data-tilt>
+            <div class="reflex-visual" aria-hidden="true">
+              <div class="split">
+                <span class="split-train">Passé · apprentissage</span>
+                <span class="split-test">Futur · test</span>
+              </div>
+            </div>
+            <span class="reflex-n">02</span>
+            <h3>Tester sur l'inconnu</h3>
+            <p>J'entraîne sur le passé et je teste sur une période que le modèle n'a jamais vue. Sinon, on mesure sa mémoire, pas sa capacité à prévoir.</p>
+          </article>
+
+          <article class="reflex" data-tilt>
+            <div class="reflex-visual" aria-hidden="true">
+              <div class="bars">
+                <div class="bar"><span>Méthode A</span><i style="--w:30%"></i></div>
+                <div class="bar"><span>Méthode B</span><i style="--w:96%"></i></div>
+                <small>score de deux méthodes comparées</small>
+              </div>
+            </div>
+            <span class="reflex-n">03</span>
+            <h3>Dire ce qui ne marche pas</h3>
+            <p>Quand un résultat est faible, je le dis et je le montre quand même. Une comparaison honnête vaut mieux qu'un faux succès.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RUBAN 2 ============ -->
+    <div class="ribbon ribbon-rev" aria-hidden="true">
+      <div class="ribbon-track"><span>Parlons data ✦ Parlons projets ✦ Parlons idées ✦ </span><span>Parlons data ✦ Parlons projets ✦ Parlons idées ✦ </span></div>
+    </div>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">05 — Contact</p>
+          <h2>Parlons <em class="grad-text">ensemble</em></h2>
+          <p class="section-lead">Un projet, une opportunité, une question : choisissez un sujet, le message est prêt à partir.</p>
+        </div>
+        <div class="contact-layout">
+          <div class="chat reveal" id="chat">
+            <div class="chat-head">
+              <img src="images/profil/illane-portrait.webp" alt="" width="44" height="44" loading="lazy">
+              <div><strong>Illane SIDIBE</strong><small>Contact via WhatsApp</small></div>
+              <svg class="wa-logo" viewBox="0 0 24 24" aria-hidden="true"><path id="wa-path" d=""/></svg>
+            </div>
+            <div class="chat-body" id="chat-body" aria-live="polite"></div>
+            <div class="chat-chips" id="chat-chips" role="group" aria-label="Choisir un sujet"></div>
+            <a class="btn btn-wa" id="wa-link" href="https://wa.me/22892079376" target="_blank" rel="noopener">Ouvrir WhatsApp</a>
+          </div>
+
+          <div class="contact-stack stagger">
+            <div class="ccard wide" data-tilt>
+              <div class="cicon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+              <a class="cinfo" href="mailto:Illanesidibe908@gmail.com"><span>Courriel</span>Illanesidibe908@gmail.com</a>
+              <button class="copy" type="button" data-copy="Illanesidibe908@gmail.com" aria-label="Copier l'adresse courriel">Copier</button>
+            </div>
+            <div class="ccard wide" data-tilt>
+              <div class="cicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div>
+              <a class="cinfo" href="tel:+22892079376"><span>Téléphone</span>+228 92 07 93 76</a>
+              <button class="copy" type="button" data-copy="+22892079376" aria-label="Copier le numéro de téléphone">Copier</button>
+            </div>
+            <div class="ccard wide" data-tilt>
+              <div class="cicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+              <div class="cinfo"><span>Adresse</span>Adidogomé – Assiyéyé, Lomé, Togo</div>
+            </div>
+            <div class="ccard" data-tilt>
+              <div class="cicon" aria-hidden="true"><svg class="brand" viewBox="0 0 24 24"><path id="gh-path" d=""/></svg></div>
+              <a class="cinfo" href="https://github.com/Angrykate" target="_blank" rel="noopener"><span>GitHub</span>Angrykate</a>
+            </div>
+            <div class="ccard" data-tilt>
+              <div class="cicon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6M12 13c0-1.5 1-2 2.2-2S17 11.8 17 13.5V17"/></svg></div>
+              <a class="cinfo" href="https://linkedin.com/in/Illanesidibe" target="_blank" rel="noopener"><span>LinkedIn</span>Illanesidibe</a>
+            </div>
+            <a class="ccard ccard-cv" href="assets/CV_Illane_SIDIBE.pdf" download data-magnetic>
+              <div class="cicon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></div>
+              <div class="cinfo"><span>Document</span>Télécharger mon CV (PDF)</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="signature" aria-hidden="true">SIDIBE</div>
+    <p>© 2026 Illane SIDIBE</p>
+    <p><a href="#accueil">Haut de page ↑</a></p>
+  </footer>
+
+  <!-- Fenêtre de détail d'un projet (remplie par projects.js) -->
+  <div id="modal" class="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Fermer">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Visionneuse d'images (lightbox.js) -->
+  <div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image agrandie">
+    <button class="lb-btn lb-close" aria-label="Fermer">×</button>
+    <button class="lb-btn lb-prev" aria-label="Image précédente">‹</button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <button class="lb-btn lb-next" aria-label="Image suivante">›</button>
+  </div>
+
+  <script defer src="js/icons.js"></script>
+  <script defer src="js/projects.js"></script>
+  <script defer src="js/words.js"></script>
+  <script defer src="js/reveal.js"></script>
+  <script defer src="js/counters.js"></script>
+  <script defer src="js/lightbox.js"></script>
+  <script defer src="js/strip.js"></script>
+  <script defer src="js/cursor.js"></script>
+  <script defer src="js/stack.js"></script>
+  <script defer src="js/contact.js"></script>
+  <script defer src="js/about.js"></script>
+  <script defer src="js/method.js"></script>
+  <script defer src="js/fx.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* ===== animations.css ===== */
+/* Les éléments ne sont cachés que si reveal.js a ajouté la classe "anim" sur <html> :
+   sans JavaScript, tout reste visible. */
+.anim .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+.anim .reveal.visible { opacity: 1; transform: none; }
+.anim .stagger > * { opacity: 0; transform: translateY(20px); transition: opacity .55s ease, transform .55s ease; transition-delay: calc(var(--i, 0) * 100ms); }
+.anim .stagger.visible > * { opacity: 1; transform: none; }
+
+/* Titres : apparition mot par mot */
+.anim .splitw .w { display: inline-block; overflow: hidden; vertical-align: top; padding: 0 .06em .14em 0; margin-bottom: -.14em; }
+.anim .splitw .w > span { display: inline-block; transform: translateY(108%); transition: transform .95s cubic-bezier(.2, .8, .2, 1); transition-delay: calc(var(--k) * 75ms + 100ms); }
+.anim .reveal.visible .splitw .w > span { transform: none; }
+
+/* Entrée de l'accueil */
+.hero-in { opacity: 0; animation: entree .8s cubic-bezier(.2, .7, .2, 1) forwards; animation-delay: calc(var(--d, 0) * 120ms + 100ms); }
+@keyframes entree { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+
+/* Photo : léger flottement */
+.hero-photo img { animation: flotte 7s ease-in-out infinite; }
+@keyframes flotte { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes molette { 0% { opacity: 0; transform: translateY(0); } 30% { opacity: 1; } 100% { opacity: 0; transform: translateY(14px); } }
+
+/* Entrée de la modale et de la visionneuse */
+.modal:not([hidden]) .modal-box { animation: monte .3s ease; }
+.lightbox:not([hidden]) img { animation: zoom .25s ease; }
+@keyframes monte { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+@keyframes zoom { from { opacity: 0; transform: scale(.97); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim .splitw .w > span, .anim .path li { transform: none; opacity: 1; transition: none; }
+  .anim .path::before { transform: none; transition: none; }
+  .ribbon-track, .pipe-packet, .pipe-icon, .caret-code, .ccard-cv .cicon svg, .path li.now::before { animation: none; }
+  .sig-l { transform: none; opacity: 1; transition: none; }
+  .reflex-visual path, .split-train, .split-test, .bar i { transition: none; stroke-dashoffset: 0; transform: none; opacity: 1; }
+  .bar i { width: var(--w); }
+  .marquee-track { animation: none; width: auto; flex-wrap: wrap; justify-content: center; row-gap: 12px; }
+  .marquee { -webkit-mask-image: none; mask-image: none; }
+  .marquee-copy { display: none; }
+  .bulle, .chat-chips, .btn-wa.pret { animation: none; transition: none; }
+  html { scroll-behavior: auto; }
+  .anim .reveal, .anim .stagger > * { opacity: 1; transform: none; transition: none; }
+  .hero-in { opacity: 1; animation: none; }
+  .hero-photo img, .caret, .scroll-hint span { animation: none; }
+  .modal:not([hidden]) .modal-box, .lightbox:not([hidden]) img { animation: none; }
+  .btn:hover, .strip-btn:hover, .carte-projet:hover, a.contact-card:hover, .gallery img:hover, .theme-toggle:hover { transform: none; }
+  .carte-projet:hover .carte-visuel img { transform: none; }
+  .hero-bg { transform: none !important; }
+}
